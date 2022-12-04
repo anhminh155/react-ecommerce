@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
-import { addTask, editTask } from "../features/tasks/tasksSlice";
 import { v4 as uuid } from "uuid";
+import { addTask, editTask } from "../redux/slice/tasksSlice";
 
 function TaskForm() {
   const [task, setTask] = useState({
