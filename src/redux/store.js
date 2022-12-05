@@ -1,7 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
+import authSlice from "./controller/auth.slice";
+import productsSlice from "./controller/products.slice";
 
-import tasksReducer from "./slice/tasksSlice";
 
 export const store = configureStore({
-  reducer: { tasks: tasksReducer },
+  reducer: { auth: authSlice, products: productsSlice },
 });
